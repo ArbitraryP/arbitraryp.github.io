@@ -1,0 +1,95 @@
+body {
+    overflow-x: hidden;
+}
+
+.splash {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    color: white;
+    text-align: center;
+    background: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.splashimage {
+    max-height: 100px;
+    max-width: 65%;
+}
+
+.splash.display-none {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.75s;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn .5s ease-in forwards;
+}
+
+.cardhover:hover {
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    transition: all 0.3s ease !important;
+    -webkit-transform: scale(1.1) !important;
+    -ms-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+    z-index: 2;
+}
+
+
+.hero-bg {
+    background-image: url(imgs/Background.png);
+    
+}
+
+.bg-darker{
+    background-color: rgb(16, 22, 22) !important;
+}
+
+.bg-dark{
+    background-color: rgb(29, 39, 38) !important;
+}
+
+.bg-secondary{
+    background-color: rgb(59, 63, 63) !important;
+}
+
+.card{
+    background-color: rgb(59, 63, 63) !important;
+}
+
+.text-muted{
+    color: rgb(155, 167, 167) !important;
+}
+
+.text-green{
+    color: rgb(25, 133, 125) !important;
+}
+
+.text-lightgreen{
+    color: rgb(52, 184, 175) !important;
+}
