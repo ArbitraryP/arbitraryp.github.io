@@ -1,6 +1,9 @@
-/*.mainbody {
+.mainbody {
     overflow-x: hidden !important;
-}*/
+    margin-left: 0;
+    margin-right: 0;
+}
+
 
 .splash {
     position: fixed;
@@ -58,6 +61,7 @@
     -ms-transform: scale(1.1) !important;
     transform: scale(1.1) !important;
     z-index: 2;
+    overflow-x: hidden !important;
 }
 
 
